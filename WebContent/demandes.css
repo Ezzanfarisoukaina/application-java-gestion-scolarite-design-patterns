@@ -1,0 +1,448 @@
+/* Styles académiques - Bleu et Blanc */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #2c3e50;
+}
+
+/* Sidebar académique */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(135deg, #003366 0%, #001f3f 100%);
+    color: white;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.sidebar a {
+    display: block;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding-left: 25px;
+}
+
+.sidebar a.active {
+    background: #ffffff;
+    color: #003366;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.user-info p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+.user-info .role {
+    color: #ffd966;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.logout {
+    background: rgba(220, 53, 69, 0.8);
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.logout:hover {
+    background: #dc3545;
+    padding-left: 20px !important;
+}
+
+/* Contenu principal académique */
+.content {
+    margin-left: 280px;
+    padding: 35px 40px;
+    flex: 1;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+}
+
+.content h1 {
+    color: #003366;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-left: 4px solid #003366;
+    padding-left: 20px;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Barre de recherche académique */
+.search-bar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #e0e7ff;
+}
+
+.search-bar input,
+.search-bar select {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.search-bar input:focus,
+.search-bar select:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+}
+
+.search-bar button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: #001f3f;
+    transform: translateY(-1px);
+}
+
+.new-request {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.new-request:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+/* Tableau académique */
+table {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    border-collapse: collapse;
+    border: 1px solid #e0e7ff;
+}
+
+thead {
+    background-color: #003366;
+    color: white;
+}
+
+th {
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e0e7ff;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Badges de statut académiques */
+td:nth-child(4) {
+    font-weight: 500;
+}
+
+td:nth-child(4):contains("En attente") {
+    color: #ffc107;
+}
+
+td:nth-child(4):contains("Approuvée") {
+    color: #28a745;
+}
+
+td:nth-child(4):contains("Rejetée") {
+    color: #dc3545;
+}
+
+/* Boutons d'action académiques */
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.approve:hover {
+    background-color: #218838;
+}
+
+.reject {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reject:hover {
+    background-color: #c82333;
+}
+
+.edit {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.edit:hover {
+    background-color: #e0a800;
+}
+
+.delete {
+    background-color: #6c757d;
+    color: white;
+}
+
+.delete:hover {
+    background-color: #5a6268;
+}
+
+.download {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.download:hover {
+    background-color: #138496;
+}
+
+/* Pied de page ou messages */
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Responsive Design Académique */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 250px;
+    }
+    
+    .content {
+        margin-left: 250px;
+        padding: 25px;
+    }
+    
+    table {
+        font-size: 0.85rem;
+    }
+    
+    th, td {
+        padding: 10px 8px;
+    }
+    
+    .btn {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .user-info {
+        position: relative;
+        bottom: auto;
+        margin-top: 20px;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+    }
+    
+    .search-bar input,
+    .search-bar select,
+    .search-bar button,
+    .new-request {
+        width: 100%;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    th, td {
+        min-width: 100px;
+    }
+}
+
+/* Animation douce */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* Style pour les liens */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+}
+
+/* Style pour les messages de succès */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+/* Scrollbar académique */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #003366;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #001f3f;
+}
+
+/* Style pour les titres de sections */
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003366;
+    margin: 20px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e7ff;
+}

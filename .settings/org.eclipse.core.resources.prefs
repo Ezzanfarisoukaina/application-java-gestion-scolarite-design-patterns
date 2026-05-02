@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//WebContent/TableauBord.jsp=UTF-8
+encoding//WebContent/attestation.jsp=UTF-8
+encoding//WebContent/dashboard.css=UTF-8
+encoding//WebContent/dashboard.jsp=UTF-8
+encoding//WebContent/demande.jsp=UTF-8
+encoding//WebContent/profile.jsp=UTF-8
+encoding//WebContent/style.css=UTF-8
+encoding//main/controller/AjouterDemandeServlet.java=UTF-8
+encoding//main/controller/AttestationPDFServlet.java=UTF-8
+encoding//main/controller/LoginServlet.java=UTF-8
